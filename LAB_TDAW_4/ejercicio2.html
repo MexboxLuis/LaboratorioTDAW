@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend> Indique sus preferencias por favor</legend>
+        Elija una fecha <input type="date" name="fecha" id=""> <br />
+        Elija un archivo <input type="file" name="archivo" id="">
+        <p> <input type="radio" name="procesador" id="amd"> AMD
+            <input type="radio" name="procesador" id="i5"> Intel i5
+            <input type="radio" name="procesador" id="i7"> Intel i7</p> 
+            <br />
+    </fieldset>
+    <fieldset>
+        <legend> Indique sus preferencias por favor</legend>
+        <p> <input type="radio" name="procesador" id="amd"> Matemáticas
+            <input type="radio" name="procesador" id="i5"> Historia
+            <input type="radio" name="procesador" id="i7"> Geografía
+            <input type="radio" name="procesador" id="i7"> Lengua
+        </p> 
+        <p> Nombre:  <input type="text" name="nombre" id="nombre" maxlength="10" required>
+            <br /> Apellidos:  <input type="text" name="apellidos" id="apellidos" maxlength="30" required>
+            <br /> Direccion:  <input type="text" name="apellidos" id="apellidos" maxlength="30" required></p>
+        <p> Elige un color: <input type="color" name="" id=""></p>
+        <textarea name="" id="" cols="59" rows="6"> Utilice este recuadro para escribir</textarea> <br />
+        Elija una fecha <input type="date" name="fecha" id=""> <br />
+        <select name="idioma">
+            <option value="Inglés"></option>
+            <option value="Alemán"></option>
+            <option value="Francés"></option>
+        </select>
+        <br />
+        Elija una hora: <input type="time" name="hora"> <br />
+        <p> Sexo 
+            <input type="radio" name="sexo" value="H"> Hombre 
+            <input type="radio" name="sexo" value="M"> Mujer
+        </p>
+        <br />
+        <input type="submit" value="ENVIAR">
+    </fieldset>
+</body>
+</html>

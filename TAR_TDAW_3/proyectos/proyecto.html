@@ -1,0 +1,28 @@
+<a href="TAR_TDAW_3/personales/info/personal.html"> Personal </a>
+<a href="TAR_TDAW_3/documentos/tarea.pdf"> Enlace tarea</a>
+<a href="TAR_TDAW_3/index.html"> Enlace index</a>
+
+<h1>URLs absolutas y relativas </h1>
+Dos términos que encontrarás en la Web son URL absoluta y URL relativa:
+URL absoluta: Hace referencia a una dirección definida por su ubicación absoluta en la web, esta
+incluye el protocolo y el nombre del dominio. Por ejemplo, si subes una página de inicio index.html
+a un directorio llamado projects que se encuentra dentro de la raíz de un servidor web, y el dominio
+del sitio web es http://www.example.com, se podrá acceder a la página desde
+<a href=" http://www.example.com/projects/index.html">http://www.example.com/projects/index.html </a> (o simplemente
+<a href="http://www.example.com/projects/">http://www.example.com/projects/ </a>,
+ya que la mayoría de los servidores web buscan la página de inicio index.html para cargarla por
+omisión si no se les especifica otra en la URL).
+Una URL absoluta siempre apuntará a la misma dirección, sin importar desde dónde se utilice
+
+Una URL relativa: Hace referencia a una dirección que depende de la posición del archivo desde
+donde se utiliza — son las que vimos en la sección anterior. Por ejemplo, si desde un archivo
+ubicado en <a href="http://www.example.com/projects/index.html"> http://www.example.com/projects/index.html</a> queremos enlazar hacia un archivo PDF
+ubicado en el mismo directorio, la URL sería simplemente el nombre del archivo (por ejemplo:
+project-brief.pdf) no necesitamos más información. Si el archivo PDF está situado en un
+subdirectorio dentro de projects llamado pdfs, la URL relativa es: pdfs/project-brief.pdf (la URL
+absoluta equivalente sería: <a href="http://www.example.com/projects/pdfs/project-brief.pdf)">http://www.example.com/projects/pdfs/project-brief.pdf) </a>.
+Una URL relativa hará referencia a diferentes direcciones según dónde se encuentre el archivo
+desde el cual se utiliza — por ejemplo, si movemos nuestro archivo index.html del directorio
+projects a la raíz del sitio web (el nivel más alto, no cualquiera de los otros directorios), la URL
+relativa pdfs/project-brief.pdf ahora hará referencia a <a href="http://www.example.com/pdfs/project-brief.pdf">http://www.example.com/pdfs/project-brief.pdf </a>
+, en lugar de a <a href="http://www.example.com/projects/pdfs/project-brief.pdf"> http://www.example.com/projects/pdfs/project-brief.pdf</a>.
