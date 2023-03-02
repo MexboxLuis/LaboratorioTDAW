@@ -1,0 +1,112 @@
+h1, h2, h3, h4, nav, footer{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100%;
+    background-color: rgb(33, 64, 100)
+}
+main{
+    background-color: rgb(153, 153, 153);
+    margin-top: 1em;
+    margin-right: 10em;
+    margin-bottom: 1em;
+    margin-left: 10em;
+    padding: 0.5em;
+}
+
+
+h1{
+    font-size: 1.5rem;
+}
+h2{
+    font-size: 0.75rem;
+}
+h3{
+    font-size: 1em;
+    border-bottom: solid 1pt rgb(153, 153, 153);
+    margin: 0 0 0.5em 0;
+}
+
+p{
+    font-size: 1rem;
+    margin-top: 0rem;
+    margin-right: 0rem;
+    margin-bottom: 0rem;
+    margin-left:0rem;
+    letter-spacing: 1px;
+}
+
+nav{
+    font-size: 1.125rem;
+    background-color: rgb(61, 98, 133);
+    padding: 0.25em;
+}
+
+nav ul li{
+    list-style:square;
+    display:inline;
+}
+
+nav a{
+    padding: 1em;
+}
+
+a:link{
+    font-weight: bold;
+    color: rgb(rgb(174, 84, 84), rgb(94, 174, 94), rgb(166, 166, 232));
+}
+
+a:visited{
+    font-weight: bold;
+    color: rgb(174, 84, 84);
+}
+
+a:hover{
+    background-color: aqua;
+}
+
+.titulo{
+    border: 5px dotted pink;
+    color: rgb(rgba(99, 228, 224, 0.479), rgb(69, 158, 69), rgb(170, 170, 204));
+    font-style:initial;
+    font-size: 0.875rem;
+}
+
+figure{
+    margin: 0.5 0em 0.5em 0em;
+}
+
+figure img{
+    padding:0.25em;
+    border:solid 1.5px #999999;
+}
+
+figure div{
+    margin: 0.25em 0em 2em 0em;
+    padding: 0.5em;
+    background: linear-gradient(gray, white);
+    width: 500px;
+    border: solid 1.5px #0e0ed0;
+    border-radius: 4px;
+}
+
+#revisiones{
+    margin-top: 1em;
+}
+
+#revisiones div{
+    border-bottom: dashed 1pt #999999;
+    margin-bottom: 1.25em;
+}
+
+header, footer{
+    color: white;
+    background-color: #3D6271;
+    margin: 0em 4em 0.5em 0em;
+}
+
+
