@@ -1,0 +1,79 @@
+body {
+    font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+    background: no-repeat;
+    background-image: url(../images/art-background4.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+header {
+    margin: 0 70% 0 5%;
+    padding: 2%;
+    width: 18rem;
+    height: 5rem;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    position: fixed;
+}
+
+header>h1 { font-family: "Six Caps"; 
+    font-size: 3em;
+    word-wrap: break-word; 
+} 
+   
+header>h2{
+    font-size: .85rem;
+    font-weight: normal;
+}
+
+article{
+    display: block;
+    padding-left: 5vw;
+    padding-top: 50vh;
+    padding-bottom: 5vh;
+    width: 40vw;
+    align-items: center;
+    position: fixed;
+}
+
+article>h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(255, 255, 255, 0.644);
+    padding: 2%;
+}
+
+
+article>p{
+    padding: 5%;
+    align-items: center;
+}
+
+.Hola{
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+.Fecha{
+   
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1.5rem;
+    padding: 3%;
+    width: 70%;
+    margin: 15px;
+  }
+
+
+article>footer{
+    background-color: rgb(255, 255, 255);
+    padding: 2%;
+}
+
+
+
+
+
+
+
+
+
