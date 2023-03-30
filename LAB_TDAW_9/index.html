@@ -5,38 +5,89 @@
   <meta charset="utf-8">
   <title>CRM</title>
   <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-  <header>
-    <a  href="#">No es un CRM real</a>
-    <nav>
-      <ul>
-        <li><a href="#">Tablero</a></li>
-        <li><a href="#">Contactos</a></li>
-        <li><a href="#">Tareas</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+      <a  href="#">No es un CRM real</a>
+      <nav>
+        <ul>
+          <li><a href="#">Tablero</a></li>
+          <li><a href="#">Contactos</a></li>
+          <li><a href="#">Tareas</a></li>
+        </ul>
+      </nav>
+    </header>
     
-  <main>
-    <div>
-      <div>
+  <main class="ancho">
+        <div>
+          <div id="representante">
+            <span></span>
+            <strong>Juan López</strong>
+            <br/> Representante de Ventas Región Centro-Sur
+            <br/>
+            <a href="#">Configuración</a> | <a href="#">Salir</a>
+          </div>
+
+          <nav>
+            <ul id="navIz" class="largo">
+              <li><a href="#">Contactos</a></li>
+              <li><a href="#">Tareas</a></li>
+              <li><a href="#">Órdenes</a></li>
+              <li><a href="#">Calendario</a></li>
+            </ul>
+          </nav>
+            
+          <div id="mensajes">
+            <h3>Mensajes Recientes</h3>
+            <ul id="contactos" class="largo">
+              <li><img src="image/icon.png" >
+                <p>De <a href="#">Ellie Sullivan</a>
+                  <br/>4 Octuber, 2014 </p>
+              </li>
+              <li><img src="image/icon.png" >
+                <p>De <a href="#">Madalena Sampaio</a>
+                  <br/>4 Octuber, 2014 </p>
+              </li>
+              <li><img src="image/icon.png" >
+                <p>De <a href="#">Puja Srivastava</a>
+                  <br/>3 Octubre, 2014 </p>
+              </li>
+              <li><img src="image/icon.png" >
+                <p>De <a href="#">Mark Taylor</a>
+                  <br/>2 Octubre, 2014 </p>
+              </li>
+              <li><img src="image/icon.png">
+                <p>De <a href="#">Madalena Sampaio</a>
+                  <br/> 2 Octubre, 2014 </p>
+              </li>
+              <li><img src="image/icon.png">
+                <p>DE <a href="#">Ellie Sullivan</a>
+                  <br/>1 Octubre, 2014 </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+    <div id="centro">
+      <div id="navCentro">
         <a href="#">Tablero</a> / <a href="#">Ventas</a>
       </div>
         
       <h2>Factura</h2>
-      <div>
-        <h4>Pearson Ed Canada</h4> 26 Prince Andrew Place
-        <br/> Don Mills, Ontario M3C 2T8
-        <br/> 416-447-5101
-        <br/> 1-800-263-9965
-      </div>
-        
-      <div>
-        <h4>Martha Sánchez</h4> 19A Avenida Instituto Politécnico
-        <br/> 90070 Tlaxcala, México
-        <br/> +52 (246) 450-0450
+      <div class="ancho" id="direcciones">
+        <div>
+          <h4>Pearson Ed Canada</h4> 26 Prince Andrew Place
+          <br/> Don Mills, Ontario M3C 2T8
+          <br/> 416-447-5101
+          <br/> 1-800-263-9965
+        </div>
+          
+        <div>
+          <h4>Martha Sánchez</h4> 19A Avenida Instituto Politécnico
+          <br/> 90070 Tlaxcala, México
+          <br/> +52 (246) 450-0450
+        </div>
       </div>
         
       <hr>
@@ -78,59 +129,12 @@
             
         </tbody>
       </table>
-      <p><a href="#">Enviar a un cliente</a></p>
-    </div>
-    <div>
-      <div>
-        <span></span>
-        <strong>Juan López</strong>
-        <br/> Representante de Ventas Región Centro-Sur
-        <br/>
-        <a href="#">Configuración</a> | <a href="#">Salir</a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#">Contactos</a></li>
-          <li><a href="#">Tareas</a></li>
-          <li><a href="#">Órdenes</a></li>
-          <li><a href="#">Calendario</a></li>
-        </ul>
-      </nav>
-        
-      <div>
-        <h3>Mensajes Recientes</h3>
-        <ul>
-          <li><img src="image/icon.png" >
-            <p>De <a href="#">Ellie Sullivan</a>
-              <br/>4 Octuber, 2014 </p>
-          </li>
-          <li><img src="image/icon.png" >
-            <p>De <a href="#">Madalena Sampaio</a>
-              <br/>4 Octuber, 2014 </p>
-          </li>
-          <li><img src="image/icon.png" >
-            <p>De <a href="#">Puja Srivastava</a>
-              <br/>3 Octubre, 2014 </p>
-          </li>
-          <li><img src="image/icon.png" >
-            <p>De <a href="#">Mark Taylor</a>
-              <br/>2 Octubre, 2014 </p>
-          </li>
-          <li><img src="image/icon.png">
-            <p>De <a href="#">Madalena Sampaio</a>
-              <br/> 2 Octubre, 2014 </p>
-          </li>
-          <li><img src="image/icon.png">
-            <p>DE <a href="#">Ellie Sullivan</a>
-              <br/>1 Octubre, 2014 </p>
-          </li>
-        </ul>
-      </div>
+      <p id="enviar"><a href="#">Enviar a un cliente</a></p>
     </div>
     <aside>
-      <div>
+      <div id="divCambios">
         <h3>Cambios semanales</h3>
-        <ul>
+        <ul class="largo" id="cambios">
           <li><span>20</span>
             <p>Nuevas Ordenes</p>
           </li>
@@ -142,9 +146,9 @@
           </li>
         </ul>
       </div>
-      <div>
+      <div id="diVendedores">
         <h3>Mejores vendedores</h3>
-        <ul>
+        <ul id="mejoresVendedores" class="largo">
           <li>
             <img src="image/photo4.jpg" height="80px"  />
             <p ><em><a href="#">English for Careers</a></em></p>
@@ -168,7 +172,6 @@
         </ul>
       </div>
     </aside>
-
   </main>
 
 </body>
