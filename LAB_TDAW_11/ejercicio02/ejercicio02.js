@@ -53,21 +53,6 @@ editButtons.forEach(function(button) {
   });
 });
 
-const filterBtn = document.querySelector('#set input[value="Filtrar"]');
-const filterSelect = document.querySelector('#set select[name="filter"]');
-const artworks = document.querySelectorAll('.artwork');
-
-filterBtn.addEventListener('click', () => {
-  const selectedGenre = filterSelect.value;
-  artworks.forEach((artwork) => {
-    if (selectedGenre === '5') {
-      artwork.style.display = 'block';
-    } else {
-      const artworkGenre = artwork.dataset.genre;
-      artwork.style.display = artworkGenre === selectedGenre ? 'block' : 'none';
-    }
-  });
-});
 
 const elements = document.querySelectorAll(".genero");
 var filter = document.getElementById("filtro");
