@@ -5,9 +5,10 @@
   <title>ejercicio02</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="ejercicio02.css">
+  <script src="ejercicio02.js" defer></script>
 </head>
 <body>
-  <form method="get" action="">
+  <form method="get" action="" id="formulario">
 
     <div id="search">
       <input type="search" name="search" placeholder="Búsqueda de títulos"><input type="submit" value="Search">
@@ -20,7 +21,7 @@
         <option value="2">Eliminar</option>
       </select>
       <input type="submit" value="Aplicar">
-      <select name="filter">
+      <select name="filter" id="filtro">
         <option value="0">Género</option>
         <option value="1">Barroco</option>
         <option value="2">Manierismo</option>
@@ -47,47 +48,47 @@
         <tbody>
           <tr>
             <td><input type="checkbox" name="index[]" value="10"></td>
-            <td><img src="images/05030.jpg" alt="Muerte de Marat"></td>
+            <td><img src="images/05030.jpg" alt="Muerte de Marat" class="imagen"></td>
             <td><em>Muerte de  Marat</em></td>
             <td>David, Jacques-Louis </td>
             <td>1793</td>
-            <td>Romanticismo</td>
+            <td class="genero">Romanticismo</td>
             <td><button><a href="#"><img src="images/edit16.png" alt="">Editar</a></button></td>
           </tr>
           <tr>
             <td><input type="checkbox" name="index[]" value="20"></td>
-            <td><img src="images/120010.jpg" alt="Retrato de Eleanor de Toledo"></td>
+            <td><img src="images/120010.jpg" alt="Retrato de Eleanor de Toledo" class="imagen"></td>
             <td><em>Retrato de Eleanor de Toledo</em></td>
             <td>Bronzino, Agnolo </td>
             <td>1545</td>
-            <td>Manierismo</td>
+            <td class="genero">Manierismo</td>
             <td><button><a href="#"><img src="images/edit16.png" alt=""> Editar</a></button></td>
           </tr>
           <tr>
             <td><input type="checkbox" name="index[]" value="30"></td>
-            <td><img src="images/07020.jpg" alt="La libertad guiando al pueblo"></td>
+            <td><img src="images/07020.jpg" alt="La libertad guiando al pueblo" class="imagen"></td>
             <td><em>La libertad guiando al pueblo</em></td>
             <td>Delacroix, Eugene    </td>
             <td>1830</td>
-            <td>Romanticismo</td>
+            <td class="genero">Romanticismo</td>
             <td><button><a href="#"><img src="images/edit16.png" alt=""> Editar</a></button></td>
           </tr>
           <tr>
             <td><input type="checkbox" name="index[]" value="40"></td>
-            <td><img src="images/13030.jpg" alt="Arreglo en gris y negro"></td>
+            <td><img src="images/13030.jpg" alt="Arreglo en gris y negro" class="imagen"></td>
             <td><em>Arreglo en gris y negro</em></td>
             <td>Whistler, James Abbott    </td>
             <td>1871</td>
-            <td>Realismo</td>
+            <td class="genero">Realismo</td>
             <td><button><a href="#"><img src="images/edit16.png" alt=""> Editarr</a></button></td>
           </tr>
           <tr>
             <td><input type="checkbox" name="index[]" value="50"></td>
-            <td><img src="images/06010.jpg" alt="Mademoiselle Caroline Riviere"></td>
+            <td><img src="images/06010.jpg" alt="Mademoiselle Caroline Riviere" class="imagen"></td>
             <td><em>Mademoiselle Caroline Riviere</em></td>
             <td>Ingres, Jean-Auguste</td>
             <td>1806</td>
-            <td>Neo-Clasicismo</td>
+            <td class="genero">Neo-Clasicismo</td>
             <td><button><a href="#"><img src="images/edit16.png" alt="">Editar</a></button></td>
           </tr>
         </tbody>
