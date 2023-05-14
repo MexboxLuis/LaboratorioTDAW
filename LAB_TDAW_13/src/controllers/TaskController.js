@@ -32,10 +32,16 @@ function destroy(req, res) {
     req.getConnection((error, conexion) =>{
         conexion.query('DELETE FROM task WHERE id = ?', [id], (error, registros) =>{
             console.log(registros);
-            res.redirect('/tasks')
+            conexion.query('ALTER TABLE task AUTO_INCREMENT=1', (error, registros) =>{
+                if(error){
+                    res.json(error);
+                }
+                res.redirect('/tasks')
+            });
         });
     });
 }
+
 
 function edit(req, res){
     const id = req.params.id;

@@ -39,5 +39,5 @@ app.use('/', tasksRoutes);
 
 app.get('/', (req, res)=>{
     res.render('index');
-    console.log('Load');
+    //console.log('Load');
 });
